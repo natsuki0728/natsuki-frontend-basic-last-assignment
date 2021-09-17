@@ -28,10 +28,8 @@
   color: $white;
   background-color: $black;
   transition: all 0.2s ease;
-  &:visited {
-    color: $white;
-  }
   &:hover {
+    color: $white;
     background-color: $orange_bistre;
     text-decoration: none;
   }
