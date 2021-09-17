@@ -1,0 +1,38 @@
+@use "../../variables" as *;
+
+@media (min-width: $xs) {
+  .button {
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+  }
+}
+@media (min-width: $md) {
+  .button {
+    width: 150px;
+    height: 55px;
+    line-height: 55px;
+  }
+}
+@media (min-width: $lg) {
+  .button {
+    width: 200px;
+    height: 55px;
+    line-height: 55px;
+  }
+}
+
+.button {
+  display: block;
+  text-align: center;
+  color: $white;
+  background-color: $black;
+  transition: all 0.2s ease;
+  &:visited {
+    color: $white;
+  }
+  &:hover {
+    background-color: $orange_bistre;
+    text-decoration: none;
+  }
+}
