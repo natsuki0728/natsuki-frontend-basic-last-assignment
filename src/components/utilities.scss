@@ -1,8 +1,5 @@
-@use "variables" as *;
-/* 使用例 */
-h2 {
-  font-size: 38px;
-}
+@use "_variables.scss" as *;
+
 
 body {
   font-family: $fontfamily-gothic;
