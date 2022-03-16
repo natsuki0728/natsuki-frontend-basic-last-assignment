@@ -9,7 +9,7 @@ $gray_nobel: #999999;
 $orange_zorba: #a19283;
 $orange_bistre: #442606;
 $black: #000000;
-$black_50: rgba($black, 0.5);
+$black_50: rgba(0, 0, 0, 0.5);
 
 $fontsize-XS: 12px;
 $fontsize-S: 14px;
@@ -18,16 +18,14 @@ $fontsize-L: 20px;
 $fontsize-XL: 36px;
 $fontsize-XXL: 40px;
 
-@import url( 'https://fonts.googleapis.com/css2？family = Roboto：wght @ 100＆ display = swap') ;
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Noto+Serif+JP:wght@200&family=Roboto:wght@100&display=swap');
-
-$fontfamily-roboto:'Roboto',sans-serif;
+$fontfamily-roboto: "Roboto", sans-serif;
 $fontfamily-mincho: "Noto Serif JP", serif;
 $fontfamily-gothic: "Noto Sans JP", sans-serif;
-$fontfamily-default: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
 
-$breakpoint-xs: 0;
+body　 {
+  font-family: "游ゴシック", "MS ゴシック", "游明朝", "MS 明朝";
+}
+
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
