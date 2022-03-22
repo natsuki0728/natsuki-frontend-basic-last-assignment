@@ -1,36 +1,39 @@
 @use "../../variables" as *;
 
-@media (min-width: $xs) {
-  .button {
-    width: 180px;
-    height: 45px;
-    line-height: 45px;
-  }
-}
-@media (min-width: $md) {
-  .button {
-    width: 150px;
-    height: 55px;
-    line-height: 55px;
-  }
-}
-@media (min-width: $lg) {
-  .button {
-    width: 200px;
-    height: 55px;
-    line-height: 55px;
-  }
-}
-
 .button {
+  width: 180px;
+  height: 45px;
+  top: 29px;
+  left: 31px;
+  padding: 0px 16px;
   display: block;
   text-align: center;
+  line-height: 45px;
   color: $white;
   background-color: $black;
   transition: all 0.2s ease;
   &:hover {
+    padding: 0 16px 0 16px;
     color: $white;
     background-color: $orange_bistre;
     text-decoration: none;
+  }
+}
+@media (min-width: $breakpoint-md) {
+  .button {
+    width: 150px;
+    height: 55px;
+    top: 219px;
+    left: 46px;
+    line-height: 55px;
+  }
+}
+@media (min-width: $breakpoint-lg) {
+  .button {
+    width: 200px;
+    height: 55px;
+    top: 549px;
+    left: 21px;
+    line-height: 55px;
   }
 }
