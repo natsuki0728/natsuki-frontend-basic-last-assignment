@@ -3,6 +3,7 @@
 .button {
   font-size: 14px;
   padding: 12.5px 64px;
+  width: 180px;
   color: $white;
   background-color: $black;
   transition: 0.2s ease;
@@ -15,10 +16,12 @@
 @media (min-width: $breakpoint-md) {
   .button {
     padding: 17.5px 49px;
+    width: 150px;
   }
 }
 @media (min-width: $breakpoint-lg) {
   .button {
     padding: 17.5px 74px;
+    width: 200px;
   }
 }
