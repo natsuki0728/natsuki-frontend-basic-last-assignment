@@ -1,9 +1,8 @@
 const gulp = require("gulp");
 const concat = require("gulp-concat");
 const replace = require("gulp-replace");
-const sass = require("gulp-sass");
+const sass = require("gulp-sass")(require("sass"));
 const cleanCSS = require("gulp-clean-css");
-sass.compiler = require("sass");
 
 gulp.task("default", () =>
   gulp
