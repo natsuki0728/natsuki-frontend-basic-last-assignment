@@ -1,0 +1,25 @@
+@use "../../variables" as *;
+
+.news{
+    display: flex;
+
+    .news-title{
+        font-size: $fontsize-L;
+        font-family: $fontfamily-mincho;
+        margin-right: 16px;
+    }
+    .news-subtitle{
+        font-size: $fontsize-M;
+        font-family: $fontfamily-gothic;
+        
+    }
+    @media(min-width:$breakpoint-lg){
+        align-items: center;
+        .news-title{
+            font-size: $fontsize-XXL;
+        }
+        .news-subtitle{
+            font-size: $fontsize-M;
+        }
+    }
+}
