@@ -1,20 +1,19 @@
 @use "../../variables" as *;
 
-.news{
+.news-event-title{
+    align-items: center;
     display: flex;
-
+    margin-bottom: 32px;
     .news-title{
         font-size: $fontsize-L;
         font-family: $fontfamily-mincho;
-        margin-right: 16px;
+        margin-bottom: 0px;
     }
     .news-subtitle{
         font-size: $fontsize-M;
-        font-family: $fontfamily-gothic;
-        
+        margin-left: 16px;
     }
     @media(min-width:$breakpoint-lg){
-        align-items: center;
         .news-title{
             font-size: $fontsize-XXL;
         }
