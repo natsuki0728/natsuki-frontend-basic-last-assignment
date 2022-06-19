@@ -13,9 +13,7 @@
       transition: 0.5s ease;
       z-index: 1;
       &:hover {
-        @media (max-width: $breakpoint-lg) {
-          transform: scale(1.2);
-        }
+        transform: scale(1.2);
       }
     }
     .card-title {
