@@ -1,0 +1,57 @@
+@use "../../variables" as *;
+.plan {
+  text-align: center;
+  display: flex;
+  @media (max-width: $breakpoint-lg) {
+    width: 220px;
+  }
+  .standard-plan .daytime-plan {
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+  }
+  .standard-plan {
+    border: 5px solid $orange_bistre;
+  }
+  .plan-title {
+    background-color: $orange_zorba;
+    font-size: $fontsize-L;
+    color: $white;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .standard-title {
+    background-color: $orange_bistre;
+    padding: 15.5px 40px;
+  }
+  .charge {
+    background-color: $gray_desertStorm;
+    color: $orange_bistre;
+    font-size: $fontsize-XXL;
+    font-weight: bold;
+    padding-top: 24px;
+    span {
+      font-size: $fontsize-L;
+      margin-right: 0px;
+    }
+    h6 {
+      color: $black;
+      margin-top: 16px;
+      margin-bottom: 0px;
+      padding-bottom: 24px;
+      font-size: $fontsize-S;
+      font-weight: normal;
+    }
+  }
+  ul {
+    padding: 0px;
+    margin-bottom: 0;
+  }
+  li {
+    list-style-type: none;
+    padding: 20px 10px;
+    border-top: 1px solid $gray_gainsboro;
+  }
+}
