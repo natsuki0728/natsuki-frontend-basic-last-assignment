@@ -7,7 +7,7 @@
   transition: all 0.2s ease;
   &:hover {
     color: $gray_nobel;
-    cursor: default;
+    cursor: pointer;
     text-decoration: none;
   }
 }
