@@ -2,6 +2,9 @@
 .plan {
   text-align: center;
   display: flex;
+  @media (max-width: $breakpoint-lg) {
+    flex-flow: column;
+  }
   .plan-format {
     &:nth-child(2n) {
       border: solid 5px $orange_bistre;
