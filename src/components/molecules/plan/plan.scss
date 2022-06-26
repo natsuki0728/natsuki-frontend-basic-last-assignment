@@ -2,16 +2,13 @@
 .plan {
   text-align: center;
   display: flex;
-  @media (max-width: $breakpoint-lg) {
-    width: 220px;
-  }
-  .standard-plan .daytime-plan {
-    width: auto;
-    height: auto;
-    box-sizing: border-box;
-  }
-  .standard-plan {
-    border: 5px solid $orange_bistre;
+  .plan-format {
+    &:nth-child(2n) {
+      border: solid 5px $orange_bistre;
+      .plan-title {
+        background-color: $orange_bistre;
+      }
+    }
   }
   .plan-title {
     background-color: $orange_zorba;
@@ -21,10 +18,6 @@
     margin-bottom: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
-  }
-  .standard-title {
-    background-color: $orange_bistre;
-    padding: 15.5px 40px;
   }
   .charge {
     background-color: $gray_desertStorm;
@@ -47,7 +40,7 @@
   }
   ul {
     padding: 0px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
   li {
     list-style-type: none;
