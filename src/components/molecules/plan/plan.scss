@@ -24,6 +24,8 @@
   }
   .charge {
     background-color: $gray_desertStorm;
+    border: 1px solid $gray_gainsboro;
+    border-bottom: 0.5px solid $gray_gainsboro;
     color: $orange_bistre;
     font-size: $fontsize-XXL;
     font-weight: bold;
@@ -48,6 +50,7 @@
   li {
     list-style-type: none;
     padding: 20px 10px;
-    border-top: 1px solid $gray_gainsboro;
+    border: 1px solid $gray_gainsboro;
+    border-top: 0.5px solid $gray_gainsboro;
   }
 }
