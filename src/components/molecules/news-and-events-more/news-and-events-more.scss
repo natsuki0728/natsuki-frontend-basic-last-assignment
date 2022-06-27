@@ -1,0 +1,16 @@
+@use "../../variables" as *;
+
+.news-event-more {
+  color: $black;
+  font-family: $fontfamily-gothic;
+  font-size: $fontsize-S;
+  transition: all 0.2s ease;
+  &:hover {
+    color: $gray_nobel;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+.fa-angle-right {
+  margin-left: 16px;
+}
