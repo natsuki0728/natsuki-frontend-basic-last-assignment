@@ -9,8 +9,6 @@
     height: auto;
     border: 1px solid $gray_gainsboro;
     border-bottom: none;
-    overflow: hidden;
-    text-overflow: ellipsis;
     &:last-child {
       border-bottom: 1px solid $gray_gainsboro;
     }
@@ -24,15 +22,17 @@
         color: $gray_nobel;
         text-decoration: none;
       }
-      p {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        margin: 0px 26px 10px 20px;
-      }
       .article-date {
         margin: 20px 0px 10px 20px;
         color: $gray_nobel;
         font-weight: normal;
+        font-size: $fontsize-XS;
+      }
+      p {
+        font-size: $fontsize-M;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0px 26px 10px 20px;
       }
     }
   }
