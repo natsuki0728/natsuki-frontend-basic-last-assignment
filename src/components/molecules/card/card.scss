@@ -1,0 +1,41 @@
+@use "../../variables" as *;
+@use "../../atoms/button/button.scss" as *;
+
+.card-body {
+  @media (max-width: $breakpoint-lg) {
+    height: 359px;
+    width: 224px;
+  }
+  .card-img-body {
+    overflow: hidden;
+    .card-img {
+      position: relative;
+      transition: 0.5s ease;
+      z-index: 1;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    .card-title {
+      pointer-events: none;
+      position: absolute;
+      z-index: 3;
+      transform: translateX(6px);
+    }
+    .triangle {
+      position: absolute;
+      pointer-events: none;
+      border-left: 150px solid $white;
+      border-bottom: 150px solid transparent;
+      z-index: 2;
+    }
+  }
+  .card-text {
+    margin: 32px 30px 30px;
+  }
+  .card-button {
+    margin: 0 auto;
+    margin-bottom: 32px;
+    text-decoration: none;
+  }
+}
