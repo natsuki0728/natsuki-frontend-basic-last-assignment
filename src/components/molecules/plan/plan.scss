@@ -1,0 +1,62 @@
+@use "../../variables" as *;
+.plan-format {
+  text-align: center;
+  box-sizing: border-box;
+  &:nth-child(2n) {
+    padding: 0px;
+    margin-bottom: 0px;
+    border: solid 5px $orange_bistre;
+    .plan-text {
+      background-color: $orange_bistre;
+      padding: 15px 10px 20px;
+    }
+    .plan-info:last-child {
+      padding-bottom: 15px;
+    }
+  }
+  @media (max-width: $breakpoint-lg) {
+    margin-bottom: 24px;
+  }
+  .plan-text {
+    background-color: $orange_zorba;
+    color: $white;
+    font-size: $fontsize-L;
+    font-weight: bold;
+    padding: 20px 10px;
+  }
+  .charge {
+    background-color: $gray_desertStorm;
+    border: 1px solid $gray_gainsboro;
+    border-bottom: none;
+    color: $orange_bistre;
+    font-size: $fontsize-XXL;
+    font-weight: bold;
+    padding: 24px 0px;
+    .charge-yen {
+      font-size: $fontsize-L;
+      margin-right: 4px;
+    }
+    .charge-num {
+      font-size: $fontsize-XXL;
+    }
+    .monthly {
+      color: $black;
+      font-size: $fontsize-S;
+      font-weight: normal;
+      margin: 16px 0px 0px;
+    }
+  }
+  .plan-info {
+    padding: 20px 10px;
+    border: 1px solid $gray_gainsboro;
+    border-bottom: none;
+    &:last-child {
+      border-bottom: 1px solid $gray_gainsboro;
+    }
+  }
+}
+ul {
+  list-style-type: none;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
